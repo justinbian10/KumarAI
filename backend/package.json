@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@aws-sdk/client-secrets-manager": "^3.378.0",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
     "openai": "^3.3.0"
   }

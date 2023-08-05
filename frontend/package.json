@@ -2,8 +2,6 @@
   "name": "handkai",
   "version": "0.1.0",
   "private": true,
-  "_____comment": "Get rid of line below and implement CORS on server",
-  "proxy":"http://34.230.53.110/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
