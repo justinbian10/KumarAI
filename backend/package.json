@@ -2,7 +2,7 @@
   "name": "kumarai",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,6 +15,7 @@
     "@aws-sdk/client-secrets-manager": "^3.378.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "openai": "^3.3.0"
+    "openai": "^3.3.0",
+    "serverless-http": "^3.2.0"
   }
 }

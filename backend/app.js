@@ -1,6 +1,7 @@
 import express from 'express';
 import openAIClient from "./openAIClient.js";
 import cors from 'cors';
+import serverless from 'serverless-http';
 
 const QUERY = 'query';
 
@@ -16,12 +17,19 @@ app.use(cors(corsOptions));
 
 app.post('/query', async function (req, res) {
     const query = req.body[QUERY]
+    console.log('before')
     const response = await openAIClient.createChatCompletion({
         model: "gpt-3.5-turbo",
         messages: [{role: "user", content: query}]
     });
-    res.send(response.data.choices[0].message.content)
+    console.log('after')
+    res.send(response.data.choices[0].message.content);
+
 });
+/*
 app.listen(port, function () {
     console.log('Example app listening on port' + port);
 });
+*/
+
+export const handler = serverless(app);

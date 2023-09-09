@@ -1,6 +1,4 @@
-FROM node:18
-
-WORKDIR /app
+FROM public.ecr.aws/lambda/nodejs:18
 
 COPY package*.json ./
 
@@ -10,4 +8,4 @@ COPY . .
 
 ENV PORT=80
 
-CMD ["npm", "start"]
+CMD ["app.handler"]

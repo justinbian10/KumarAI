@@ -15,7 +15,7 @@ export default function Query() {
       body: JSON.stringify({ query: queryValue })
     };
     // After CORS put back the whole resource url
-    fetch('http://34.230.53.110/query', requestConfig)
+    fetch('https://m2hhpqtg56.execute-api.us-east-1.amazonaws.com/Prod/query', requestConfig)
       .then(response => response.text())
       .then(data => {
         console.log(data);
