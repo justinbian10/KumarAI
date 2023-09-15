@@ -19,7 +19,7 @@ Resources:
             Method: any
       ImageUri: handkaifunction:nodejs18.x-v1
     Metadata:
-      DockerContext: C:\Users\Justin\Desktop\Projects\KumarAI\backend
+      DockerContext: /Users/justinbian/Desktop/Projects/handkai/KumarAI/backend
       DockerTag: nodejs18.x-v1
       Dockerfile: Dockerfile
       SamResourceId: HandKAIFunction
